@@ -1,5 +1,7 @@
+#step-4{
+    display : none;
+}
 .selected{
-    display:none;
     width: 67%;
     background-color:rgba(248,249,254,255);
     padding: 1.2rem;
