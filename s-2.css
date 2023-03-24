@@ -249,11 +249,11 @@ input:checked+.slider:before {
     }
 
     .plan-detail .plan-name{
-        font-size: 1rem;
+        /* font-size: .9rem; */
     }
 
     .plan-detail .plan-rate{
-        font-size: .9rem;
+        font-size: .8rem;
     }
 
     .plan-detail .free{

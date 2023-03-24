@@ -136,7 +136,7 @@ input:focus-visible {
     }
 
     .step .step-details .step-p {
-        font-size: .9rem;
+        /* font-size: .9rem; */
     }
 
 
@@ -154,11 +154,11 @@ input:focus-visible {
     }
 
     h1 {
-        font-size: 1.6rem;
+        /* font-size: 1.6rem; */
     }
 
     .step .step-details .step-p {
-        font-size: 1.2rem;
+        font-size: .9rem;
         margin-top: 1rem;
     }
 
@@ -176,7 +176,7 @@ input:focus-visible {
 
     input::placeholder {
         color: rgb(176, 174, 174);
-        font-size: 1rem;
-        font-weight: 600;
+        /* font-size: 1rem; */
+        /* font-weight: 600; */
     }
 }
