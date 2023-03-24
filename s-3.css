@@ -86,7 +86,6 @@
     .ad-ons {
         width: 90%;
         margin-top: -4rem;
-        margin-top: 1rem;
     }
 
     .sec-1,
@@ -96,16 +95,19 @@
         height: 4.5rem;
     }
     .details .heading{
-        /* font-size: 1rem; */
+        font-size: 1rem;
         margin: .2rem 0;
+    }
+    .details .sec-detail {
+        font-size: .9rem;
     }
 
     .price {
-        /* font-size: .7rem; */
+        font-size: .8rem;
         margin-right: .5rem;
     }
 
     .mobile-s3-height{
-        min-height: 50vh;
+        height: 60vh;
     }
 }
