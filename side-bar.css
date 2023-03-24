@@ -3,7 +3,7 @@
 .side-bar{
     height: 89%;
     width: 25%;
-    background-image: url('/bg-sidebar-desktop.svg');    
+    background-image: url('bg-sidebar-desktop.svg');    
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@ li .step-info .step-name{
  @media (max-width:770px) {
     .side-bar{
         width: 100vw;
-        background-image: url('/bg-sidebar-mobile.svg');
+        background-image: url('bg-sidebar-mobile.svg');
         background-color: red;
         background-size: cover;
         height: 12rem;
