@@ -1,6 +1,7 @@
 let step1Btn = document.getElementById('step-1-btn');
 let step2Btn = document.getElementById('step-2-btn');
 let step3Btn = document.getElementById('step-3-btn');
+let step4Btn = document.getElementById('step-4-btn');
 let step1Li = document.getElementById('step-1-li');
 let step2Li = document.getElementById('step-2-li');
 let step3Li = document.getElementById('step-3-li');
@@ -174,6 +175,11 @@ step3Btn.addEventListener('click',()=>{
         totalPrice.innerHTML = `$${total}/yr`;
     }
 
+})
+let thankYou = document.getElementById('thankyou')
+step4Btn.addEventListener('click',()=>{
+    step4.style.display = "none"
+    thankYou.style.display = 'flex'
 })
 
 //switching b/w mothly and yearly plans and ad-ons
