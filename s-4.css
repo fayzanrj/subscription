@@ -66,7 +66,7 @@ hr{
 @media (max-width:770px) {
     .selected{
         width: 90%;
-        margin-top: -2rem;
+/*         margin-top: -2rem; */
         min-height: 6rem;
         height: fit-content;
     }
@@ -78,7 +78,7 @@ hr{
     }
 
     .mobile-s4-height{
-        min-height: 19rem;
+        min-height: 24rem;
         height: fit-content;
     }
 }
