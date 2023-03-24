@@ -1,0 +1,76 @@
+.selected{
+    width: 67%;
+    background-color:rgba(248,249,254,255);
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    max-height: 13rem;
+}
+
+.choosen-plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choosen-p-name{
+    font-size: 1rem;
+    color: rgba(31,54,86,255);
+    font-weight: bold;
+}
+
+.choosen-p-name a{
+    font-size: .9rem;
+    color: rgb(130, 130, 130);
+}
+
+.choosen-p-price{
+    color: rgb(0, 0, 30);
+    font-weight: bold;
+}
+
+hr{
+    margin-top: 1.7rem;   
+}
+
+.ad-ons-selected{
+    margin: 1rem 0;
+    /* display: none; */
+}
+.ad-on-s-name{
+    font-size: .9rem;
+    color: rgb(130, 130, 130) ;
+    display: none;
+}
+
+.ad-on-s-price{
+    font-size: .8rem;
+    display: none;
+}
+
+.total-c{
+    width: 60% ;
+    font-size: .95rem;
+    margin-top: 1rem;
+}
+
+.total-per{
+    color:rgb(130, 130, 130) ;
+}
+
+.total-p{
+    color:  rgb(64, 12, 209);
+    font-weight: bold;
+}
+
+@media (max-width:770px) {
+    .selected{
+        width: 90%;
+        margin-top: -2rem;
+    }
+
+    .total-c{
+        width: 85%;
+        margin-top: 2rem;
+    }
+}

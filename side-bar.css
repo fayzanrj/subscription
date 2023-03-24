@@ -1,0 +1,90 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+.side-bar{
+    height: 89%;
+    width: 25%;
+    background-image: url('/bg-sidebar-desktop.svg');    
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+li{
+    list-style: none;
+    width: 70%;
+    height: 2rem;
+    margin: 1.5rem auto;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+}
+
+li .step-no{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border : 2px solid white;
+}
+
+li .step-info .step-no-1{
+    color: rgb(201, 199, 199);
+    font-size: .7rem;
+}
+
+li .step-info .step-name{
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.active{
+    background-color: #bde2fd;
+    color: #36587e;
+}
+
+ @media (max-width:900px) {
+    .side-bar{
+        height: 100%;
+    }
+
+    li .step-info .step-name{
+        font-size: .7rem;
+    }
+
+    li .step-info .step-no-1{
+        font-size: .6rem;
+    }
+ }
+
+ @media (max-width:770px) {
+    .side-bar{
+        width: 100vw;
+        background-image: url('/bg-sidebar-mobile.svg');
+        background-color: red;
+        background-size: cover;
+        height: 12rem;
+        display: flex;
+        justify-content: center;
+        gap: .8rem;
+        /* align-item?s: center; */
+        padding: 2.2rem;
+    }
+
+    .side-bar li{
+        align-items: center;
+        justify-content: center;
+        width: 12%;
+        margin: 0;
+    }
+
+    li .step-no{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    li .step-info{
+        display: none;
+    }
+}

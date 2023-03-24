@@ -93,6 +93,9 @@ let totalPrice = document.getElementById('total-p')
 step3Btn.addEventListener('click',()=>{
     step3.style.display = "none"
     step4.style.display = 'flex'
+    
+    step3Li.classList.remove('active');
+    step4Li.classList.add('active')
 
     if(checkboxM1.checked ){
         adOnS1N.style.display = 'block'
@@ -171,7 +174,6 @@ step3Btn.addEventListener('click',()=>{
         totalPrice.innerHTML = `$${total}/yr`;
     }
 
-    
 })
 
 //switching b/w mothly and yearly plans and ad-ons

@@ -1,0 +1,182 @@
+.step {
+    width: 90%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(0, 0, 30);
+    padding-top: .6rem;
+    position: relative;
+}
+
+.step .step-details {
+    width: 68%;
+    height: 16%;
+}
+
+h1 {
+    margin: .5rem 0;
+    font-size: 1.8rem;
+}
+
+.step .step-details .step-p {
+    font-size: .9rem;
+    color: rgb(135, 132, 132);
+}
+
+.step .step-1-form {
+    /* background-color: aqua; */
+    width: 67%;
+    height: 100%;
+    margin-top: .8rem;
+    padding: 1.6rem 0;
+    position: relative;
+}
+
+.step .step-1-form .step-1-input {
+    width: 100%;
+    height: 2.2rem;
+    margin-top: .5rem;
+    margin-bottom: 1.2rem;
+    border-radius: 5px;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1.8px solid gainsboro;
+}
+
+input {
+    border-color: 1px solid gray;
+}
+
+input::placeholder {
+    color: rgb(135, 132, 132);
+    font-size: .8rem;
+}
+
+input:focus-visible {
+    border: 2px solid rgb(91, 0, 188);
+    outline: none;
+}
+
+.step .step-1-form .step-1-label {
+    font-size: .8rem;
+    /* font-weight: 5500; */
+}
+
+.btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    float: right;
+    height: 2.3rem;
+    padding: 0 1rem;
+    border-radius: 5px;
+    border-color: transparent;
+    color: white;
+    background-color: #174a8b;
+}
+
+@media (max-width:900px) {
+    .step .step-1-form {
+        margin-top: .5rem;
+        padding: .5rem;
+    }
+
+    .step .step-1-form .step-1-input {
+        margin-bottom: .8rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .step .step-details .step-p {
+        font-size: .8rem;
+    }
+
+    .btn {
+        height: 1.8rem;
+        padding: 0 .5rem;
+        bottom: 0;
+    }
+
+}
+
+
+@media (max-width:770px) {
+    .step {
+        width: 100%;
+        height: 56.5vh;
+        background-color: white;
+        border-radius: 10px;
+        top: -5rem;
+    }
+
+    .button-s1 {
+        width: 100vw;
+        height: 5rem;
+        background-color: white;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 2rem;
+    }
+
+    .btn {
+        position: relative;
+        height: 2.8rem;
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .step .step-details .step-p {
+        font-size: .9rem;
+    }
+
+
+    .step .step-details {
+        width: 85%;
+    }
+
+    .step .step-1-form {
+        width: 90%;
+    }
+
+    .step .step-details {
+        margin-top: .9rem;
+        height: 40%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .step .step-details .step-p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .step .step-1-form .step-1-input {
+        height: 2.7rem;
+        margin-top: .1rem;
+        margin-bottom: 1.2rem;
+    }
+
+
+    .step .step-1-form .step-1-label {
+        /* font-size: .7rem; */
+        font-weight: 600;
+    }
+
+    input::placeholder {
+        color: rgb(176, 174, 174);
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
