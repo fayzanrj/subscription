@@ -108,7 +108,8 @@ input:focus-visible {
 @media (max-width:770px) {
     .step {
         width: 100%;
-        height: 56.5vh;
+        min-height: 48vh;
+        height: fit-content;
         background-color: white;
         border-radius: 10px;
         top: -5rem;
@@ -150,7 +151,7 @@ input:focus-visible {
 
     .step .step-details {
         margin-top: .9rem;
-        height: 40%;
+        height: 25%;
     }
 
     h1 {

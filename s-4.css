@@ -67,10 +67,18 @@ hr{
     .selected{
         width: 90%;
         margin-top: -2rem;
+        min-height: 6rem;
+        height: fit-content;
     }
 
     .total-c{
         width: 85%;
-        margin-top: 2rem;
+        margin-top: 2rem
+
+    }
+
+    .mobile-s4-height{
+        min-height: 19rem;
+        height: fit-content;
     }
 }
