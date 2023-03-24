@@ -66,7 +66,7 @@ hr{
 @media (max-width:770px) {
     .selected{
         width: 90%;
-/*         margin-top: -2rem; */
+        /* margin-top: -.2rem; */
         min-height: 6rem;
         height: fit-content;
     }

@@ -1,0 +1,23 @@
+.thankyou{
+    position: relative;
+    justify-content: center;
+    gap: 1rem;
+    display: none;
+}
+
+.ty-img img{
+    margin: auto;
+    position: relative;
+    width: 4rem;
+}
+
+.ty-p{
+    width: 75%;
+    text-align: center;
+}
+
+@media (max-width:770px) {
+    .ty-p{
+        width: 78%;
+    }
+}

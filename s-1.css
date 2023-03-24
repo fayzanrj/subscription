@@ -136,9 +136,9 @@ input:focus-visible {
         padding: 0 1rem;
     }
 
-    .step .step-details .step-p {
-        /* font-size: .9rem; */
-    }
+    /* .step .step-details .step-p {
+        font-size: .9rem;
+    } */
 
 
     .step .step-details {
@@ -154,9 +154,9 @@ input:focus-visible {
         height: 25%;
     }
 
-    h1 {
-        /* font-size: 1.6rem; */
-    }
+    /* h1 {
+        font-size: 1.6rem;
+    } */
 
     .step .step-details .step-p {
         font-size: .9rem;

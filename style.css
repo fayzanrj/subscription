@@ -55,6 +55,7 @@
         width: 91%;
         margin: auto;
         min-height: 100vh;
+        background-color: red;
         height: fit-content;
         flex-direction: column;
         justify-content: flex-start;
