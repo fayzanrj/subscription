@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/side-bar.css">
+    <link rel="stylesheet" href="./styles/s-1.css">
+    <link rel="stylesheet" href="./styles/s-2.css">
+    <link rel="stylesheet" href="./styles/s-3.css">
+    <link rel="stylesheet" href="./styles/s-4.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="side-bar">
+                <li class="side-bar-li">
+                    <div class="step-no active" id="step-1-li">
+                        1
+                    </div>
+                    <div class="step-info">
+                        <div class="step-no-1">
+                            STEP 1
+                        </div>
+                        <div class="step-name">
+                            YOUR INFO
+                        </div>
+                    </div>
+                </li>
+                <li class="side-bar-li">
+                    <div class="step-no" id="step-2-li">
+                        2
+                    </div>
+                    <div class="step-info">
+                        <div class="step-no-1">
+                            STEP 2
+                        </div>
+                        <div class="step-name">
+                            SELECT PLAN
+                        </div>
+                    </div>
+                </li>
+                <li class="side-bar-li">
+                    <div class="step-no" id="step-3-li">
+                        3
+                    </div>
+                    <div class="step-info">
+                        <div class="step-no-1">
+                            STEP 3
+                        </div>
+                        <div class="step-name">
+                            ADD-ONS
+                        </div>
+                    </div>
+                </li>
+                <li class="side-bar-li">
+                    <div class="step-no" id="step-4-li">
+                        4
+                    </div>
+                    <div class="step-info">
+                        <div class="step-no-1">
+                            STEP 4
+                        </div>
+                        <div class="step-name">
+                            SUMMARY
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <div class="main">
+                <div class="step" id="step-1">
+                    <div class="step-details">
+                        <h1>Personal info</h1>
+                        <p class="step-p">Please provide your name, e-mail address, and phone number.</p>
+                    </div>
+                    <form class="step-1-form" onsubmit="goToPage2(event)">
+                        <label for="name" class="step-1-label">Name</label><br>
+                        <input type="text" required class="step-1-input" placeholder="e.g. Stephen King"><br>
+                        <label for="e-mail" class="step-1-label">Email Address</label><br>
+                        <input type="email" class="step-1-input" required placeholder="e.g. stephenking@lorem.com"><br>
+                        <label for="phone" class="step-1-label">Phone Number</label><br>
+                        <input type="number" class="step-1-input" required placeholder="e.g. +1 234 567 890"><br>
+                        <div class="button-s1">
+                            <button class="btn" id="step-1-btn">Next Step</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="step mobile-s2-height" id="step-2" style="display: none;">
+                    <div class="step-details">
+                        <h1>Select your plan</h1>
+                        <p class="step-p">
+                            You have the option of monthly or yearly biling.
+                        </p>
+                    </div>
+                    <div class="biling monthly-biling" id="monthly-biling">
+                        <div class="arcade plan">
+                            <div class="icon">
+                                <img src="icon-arcade.svg" alt="">
+                            </div>
+                            <div class="plan-detail">
+                                <div class="plan-name">
+                                    Arcade
+                                </div>
+                                <div class="plan-rate">
+                                    $9/mo
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advance plan">
+                            <div class="icon">
+                                <img src="icon-advanced.svg" alt="">
+                            </div>
+                            <div class="plan-detail">
+                                <div class="plan-name">
+                                    Advanced
+                                </div>
+                                <div class="plan-rate">
+                                    $12/mo
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro plan">
+                            <div class="icon">
+                                <img src="icon-pro.svg" alt="">
+                            </div>
+                            <div class="plan-detail">
+                                <div class="plan-name">
+                                    Pro
+                                </div>
+                                <div class="plan-rate">
+                                    $15/mo
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="biling yearly-biling" id="yearly-biling">
+                        <div class="arcade plan">
+                            <div class="icon">
+                                <img src="icon-arcade.svg" alt="">
+                            </div>
+                            <div class="plan-detail">
+                                <div class="plan-name">
+                                    Arcade
+                                </div>
+                                <div class="plan-rate">
+                                    $90/yr
+                                </div>
+                                <div class="free">
+                                    2 months free
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advance plan">
+                            <div class="icon">
+                                <img src="icon-advanced.svg" alt="">
+                            </div>
+                            <div class="plan-detail">
+                                <div class="plan-name">
+                                    Advanced
+                                </div>
+                                <div class="plan-rate">
+                                    $120/yr
+                                </div>
+                                <div class="free">
+                                    2 months free
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro plan">
+                            <div class="icon">
+                                <img src="icon-pro.svg" alt="">
+                            </div>
+                            <div class="plan-detail">
+                                <div class="plan-name">
+                                    Pro
+                                </div>
+                                <div class="plan-rate">
+                                    $150/yr
+                                </div>
+                                <div class="free">
+                                    2 months free
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="switch-section">
+                        <div class="switch">
+                            <label>
+                                <input type="checkbox" id="biling-switch">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="btn-2" id="step-2-btn" disabled="true">Next Step</button>
+                    </div>
+                </div>
+                <div class="step mobile-s3-height" id="step-3">
+                    <div class="step-details">
+                        <h1>Pick add-ons</h1>
+                        <p class="step-p">Add-ons help enchance your gaming experience</p>
+                    </div>
+
+                    <div class="ad-ons" id="monthly-ad-ons">
+                        <div class="sec-1" id="sec-m-1">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox-m-1">
+                            </div>
+                            <div class="details">
+                                <div class="heading">
+                                    Online service
+                                </div>
+                                <div class="sec-detail">
+                                    Access to multiplayer games
+                                </div>
+                            </div>
+                            <div class="price">
+                                +$1/mo
+                            </div>
+                        </div>
+                        <div class="sec-2" id="sec-m-2">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox-m-2">
+                            </div>
+                            <div class="details">
+                                <div class="heading">
+                                    Larger storage
+                                </div>
+                                <div class="sec-detail">
+                                    Extra 1TB of cloud save
+                                </div>
+                            </div>
+                            <div class="price">
+                                +$2/mo
+                            </div>
+                        </div>
+                        <div class="sec-3" id="sec-m-3">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox-m-3">
+                            </div>
+                            <div class="details">
+                                <div class="heading">
+                                    Customizable profile
+                                </div>
+                                <div class="sec-detail">
+                                    Custom theme on your profile
+                                </div>
+                            </div>
+                            <div class="price">
+                                +$2/mo
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad-ons" id="yearly-ad-ons">
+                        <div class="sec-1" id="sec-1">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox-1">
+                            </div>
+                            <div class="details">
+                                <div class="heading">
+                                    Online service
+                                </div>
+                                <div class="sec-detail">
+                                    Access to multiplayer games
+                                </div>
+                            </div>
+                            <div class="price">
+                                +$10/yr
+                            </div>
+                        </div>
+                        <div class="sec-2" id="sec-2">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox-2">
+                            </div>
+                            <div class="details">
+                                <div class="heading">
+                                    Larger storage
+                                </div>
+                                <div class="sec-detail">
+                                    Extra 1TB of cloud save
+                                </div>
+                            </div>
+                            <div class="price">
+                                +$20/yr
+                            </div>
+                        </div>
+                        <div class="sec-3" id="sec-3">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox-3">
+                            </div>
+                            <div class="details">
+                                <div class="heading">
+                                    Customizable profile
+                                </div>
+                                <div class="sec-detail">
+                                    Custom theme on your profile
+                                </div>
+                            </div>
+                            <div class="price">
+                                +$20/yr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="btn-2" id="step-3-btn">Next Step</button>
+                    </div>
+                </div>
+                <div class="step" id="step-4">
+                    <div class="step-details">
+                        <h1>Finishing up</h1>
+                        <p class="step-p">Double-check everything looks Ok before confirming</p>
+                    </div>
+                    <div class="selected">
+                        <div class="choosen-plan">
+                            <div class="choosen-p-name" id="choosen-p-name">
+                                Arcade (Monthly)
+                                <div class="change">
+                                    <a href="#">Change</a>
+                                </div>
+                            </div>
+                            <div class="choosen-p-price" id="choosen-p-price">
+                                $12/mo
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="choosen-plan ad-ons-selected">
+                            <div class="ad-on-s-name" id="ad-on-s-1-n">
+                                Online service
+                            </div>
+                            <div class="ad-on-s-price" id="ad-on-s-1-p">
+                                +$1/mo
+                            </div>
+                        </div>
+                        <div class="choosen-plan ad-ons-selected">
+                            <div class="ad-on-s-name" id="ad-on-s-2-n">
+                                Online Service
+                            </div>
+                            <div class="ad-on-s-price" id="ad-on-s-2-p">
+                                +$1/mo
+                            </div>
+                        </div>
+                        <div class="choosen-plan ad-ons-selected">
+                            <div class="ad-on-s-name" id="ad-on-s-3-n">
+                                Online Service
+                            </div>
+                            <div class="ad-on-s-price" id="ad-on-s-3-p">
+                                +$1/mo
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total-c choosen-plan">
+                        <div class="total-per" id="total-per">
+                            Total (per month)
+                        </div>
+                        <div class="total-p" id="total-p">
+                            +$15/mo
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="btn-2" id="step-4-btn">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="ad-ons.js"></script>
+    <script src="plan.js"></script>
+</body>
+
+</html>
