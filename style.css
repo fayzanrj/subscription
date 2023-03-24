@@ -54,8 +54,8 @@
     .container .box{
         width: 91%;
         margin: auto;
-        min-height: 100vh;
-        height: fit-content;
+        height: 100vh;
+/*         height: fit-content; */
         flex-direction: column;
         justify-content: flex-start;
         background-color: transparent;
